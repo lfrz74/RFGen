@@ -1,0 +1,16 @@
+The test build has been created. I uploaded it to the following link. https://rfgen-my.sharepoint.com/:f:/p/dnaumenko/EhgkOlgSM8RNrlGBLcrj7O4Bh1sJlcltv4CsXro_3GqJBw?e=l4NdGT
+
+To install the test build, please follow the instructions below.
+Stop the RFgen service and close all RFgen applications.
+In the RFgen installation directory (C:\Program Files\RFgen5 if the default is used), rename the RFIPC500.exe file to RFIPC500_BU.exe
+Copy the file in the OneDrive folder to the installation directory.
+Navigate to C:\ProgramData\RFgen5 and create a folder called "Logs".
+In the C:\ProgramData\RFgen5 directory, add the following lines to the end of the RFgen.ini file.
+[Trace]
+RFIPC500=1
+
+Please install the test build in your test environment and verify that the RFgen service functions as expected before installing the test build in your production environment.
+
+Once you've installed the test build in your production environment, we will need to wait for the issue to occur. Once the issue does occur, please upload everything in the "Logs" folder to the OneDrive link so that our developers can analyze the information.
+
+Please let me know if you have any questions.
